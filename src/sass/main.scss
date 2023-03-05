@@ -1,0 +1,73 @@
+@import './abstract/all';
+@import './components/all';
+@import './base/all';
+body{
+    background: url('../image/bg-body.png') center center no-repeat ;
+    background-size: cover;
+    color:$white;
+    font-family: 'Outfit';
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+        background-attachment: fixed;
+    }
+}
+.container{
+    overflow: hidden;
+}
+.left__row{
+    margin-top: 40px;
+    row-gap: 30px;
+    padding: 20px 0 40px;
+}
+.candy__heading{
+    h1{
+        font-weight: 700;
+        font-size: 4em;
+    }
+    @media screen and (max-width: 768px) {
+        h1{
+            font-weight: 700;
+            font-size: 2em;
+        }
+    }
+}
+.candy__about{
+    padding: 0 30px;
+    .about__img{
+        img{
+            position: relative;
+            z-index: -1;
+        }
+    }
+    h2.about__heading{
+        position: relative;
+        margin-top: -130px;
+        text-align: end;
+        font-weight: 700;
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+    p.about__content{
+        font-size: .8em;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 768px) {
+        h2.about__heading{
+            font-size: 1.5em !important;
+
+        }
+        p.about__content{
+            font-size: .8em !important;
+        }
+    }
+}
+
+.candy__footer{
+    padding: 40px;
+    a{
+        display: block;
+        .__icon{
+            margin-right: 10px;
+        }
+    }
+}

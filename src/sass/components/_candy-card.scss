@@ -1,0 +1,20 @@
+.cand-card{
+    gap: 15px;
+    .cand__img{
+        img{
+            width: 100% !important;
+        }
+    }
+    p.candy__body{
+        font-size: .8em;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 768px) {
+        gap: 25px;
+        margin: 30px 0;
+        p.candy__body{
+            font-size: 1.2em;
+            padding: 0 30px;
+        }
+    }
+}
